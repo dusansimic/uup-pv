@@ -11,7 +11,7 @@ class V5Z1 {
       a = Svetovid.in.readInt("Unesite broj a: ");
       suma = suma + a;
     }
-    prosek = suma / n;
+    prosek = (suma * 1.0) / n;
     System.out.println("Aritmeticka sredina je: " + prosek);
   }
 }
