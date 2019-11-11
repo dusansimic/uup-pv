@@ -4,6 +4,7 @@ class V5Z3 {
     int ms = 0; 
     int vs = 0;
     int iz = 0;
+    int cif = 0;
     int ostali = 0;
     znak = Svetovid.in.readChar("Unesite znak: ");
     while(znak != '.') {
@@ -12,8 +13,11 @@ class V5Z3 {
       } 
       else if ('A' <= znak && znak <= 'Z') {
         vs++;
-      } 
-      else if (znak == ',' || znak == ';' || znak == ':' || znak == '?' || znak == '!') {
+      }
+      else if (znak >= '0' || znak <= '9') {
+        cif++;
+      }
+      else if (znak == '.' || znak == ',' || znak == ';' || znak == ':' || znak == '?' || znak == '!') {
         iz++;
       }
       else {
@@ -24,6 +28,7 @@ class V5Z3 {
     System.out.println("Unetih malih slova: " + ms);
     System.out.println("Unetih velikih slova: " + vs);
     System.out.println("Unetih i. znakova: " + iz);
+    System.out.println("Uneith cifara: " + cif);
     System.out.println("Unetih ostalih znakova: " + ostali);
   }
 }
