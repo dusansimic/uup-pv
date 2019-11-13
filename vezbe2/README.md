@@ -12,8 +12,8 @@ Napisati program koji učitava prirodan broj i ispisuje da li je taj broj prost.
 
 ## Zadatak 3
 
-Napisati program koji učitava prirodan broj i ispisuje cifre tog broja koje su proste.
+Napisati program koji učitava prirodan broj i ispisuje koliko cifara tog broja su proste.
 
 Primer:
 
-`13657 -> 7, 5, 3, 1`
+`13657 -> 4`
