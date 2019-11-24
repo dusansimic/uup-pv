@@ -17,7 +17,7 @@ class Zadatak3 {
     
     for (int i = 0; i <= veci.length() - manji.length(); i++) {
       boolean sadrzi = true;
-      for (int j = 0; j < manji.length(); j++) {
+      for (int j = 0; j < manji.length() && sadrzi; j++) {
         sadrzi = manji.charAt(j) == veci.charAt(i + j);
       }
       br += sadrzi ? 1 : 0;
