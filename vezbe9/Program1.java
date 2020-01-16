@@ -45,7 +45,7 @@ class Program1 {
     rez.k[0] = f.k[0];
     for (int i = 1; i <= f.st; i++) {
       Polinom acum = PolinomN.kopiraj(g);
-      for (int j = 0; j < i; j++) {
+      for (int j = 1; j < i; j++) {
         acum = PolinomN.puta(acum, g);
       }
       acum = PolinomN.brojPuta(acum, f.k[i]);
